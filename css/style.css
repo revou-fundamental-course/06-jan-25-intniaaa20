@@ -1,0 +1,27 @@
+.main-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo-icon {
+    border: 1px solid;
+    border-radius: 50%;
+    height: 50px;
+    width: 50px;
+    background-size: cover;
+}
+
+.banner-image {
+    border: 1px solid;
+    height: 450px;
+}
+
+.content {
+    height: 500px;
+
+}
+
+.footer {
+    text-align: center;
+}
