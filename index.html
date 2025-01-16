@@ -3,65 +3,135 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>My Profile</title>
     <link rel="stylesheet" href="css/style.css">
+    <script src="js/script.js"></script>
 </head>
 <body>
-    <header class="main header">
-        <!-- logo -->
-        <div class ="logo-icon"></div>
+    <header class="main-header">
+        <!-- Logo -->
+        <img src="images/gambar.jpg" alt="Profile Picture" style="border-radius: 50%; height: 50px; width: 50px; object-fit: cover; border: 2px solid;">
 
-        <!-- navigation -->
-         <nav>
-                <a href="#home-page">Home</a>
-                <a href="#our-profile">About</a>
-                <a href="#portofolio">Services</a>
-                <a href="#message-us">Contact</a>
-         </nav>
+        <!-- Navigasi -->
+        <nav>
+            <a href="#home-page">Home</a>
+            <a href="#our-profile">About</a>
+            <a href="#portfolio">Services</a>
+            <a href="#message-us">Contact</a>
+        </nav>
     </header>
 
     <hr />
-        
-    <main>
-        <!-- home page -->
-        <section>
-            <header id="home-page">
-                <h1>Hi <span id="user-greeting">User</span>, Welcome to our website</h1>
-                <p>Hai Hai</p>
-            </header>
 
-            <div class="banner=image"></div>
+    <!-- Konten utama -->
+    <main>
+        <!-- Tampilan Awal -->
+        <section>
+            <!-- Isi -->
+            <header id="home-page">
+                <h1>Hi, Welcome to My World!</h1>
+                <h2>My name is Debora Intania Subekti, can be called 'Intan'. I'm so grateful to see you here.</h2>
+                <p>If you know guys, music and literacy are things I can say I'm passionate about, as is the feeling of joy when you visit this website.</p>
+                <p>It's simple but I put a lot of time and effort into this precious opportunity. Thank you for getting to know me, let's share stories!</p>
+            </header>
+            <p>
+            <div class="banner-container">
+                <img src="images/gambar-1.jpg" alt="Banner 1" class="banner-slide">
+                <img src="images/gambar-2.jpg" alt="Banner 2" class="banner-slide">
+                <img src="images/gambar-3.jpg" alt="Banner 3" class="banner-slide">
+            </div>                
         </section>
 
-        <!-- our profile -->
+        <!-- Profil -->
         <section>
             <header id="our-profile">
                 <h1>Our Profile</h1>
             </header>
+
+            <!-- Menambahkan profil diri -->
+            <div class="profile-container">
+                <!-- Gambar Profil -->
+                <div class="profile-image">
+                    <img src="images/gambar.jpg" alt="Profile Picture" class="profile-photo">
+                </div>
+        
+                <!-- Informasi diri -->
+                <div class="profile-info">
+                    <h2>Debora Intania Subekti</h2>
+                    <p><strong>Age:</strong> 20 years old</p>
+                    <p><strong>Status:</strong> 4th Semester Student | Information Systems | ITK </p>
+                    <p><strong>Location:</strong> Balikpapan, Indonesia</p>
+                    <p><strong>Hobbies:</strong> Music, Regional dance, and Literacy</p>
+                    <p><strong>Instagram:</strong> @intniaaa._</p>
+                </div>
+            </div>
         </section>
 
-        <!-- portofolio -->
+        <!-- Portfolio -->
         <section>
-            <header id="portofolio">
-                <h1>portofolio</h1>
+            <header id="portfolio">
+                <h1>Portfolio</h1>
+                <p>These are just a few examples I can give from my experience, I hope to keep improving!</p>
             </header>
+
+              <!-- Contoh projek/portfolio -->
+                <div class="portfolio-item">
+                    <h2>Project 1</h2>
+                    <img src="images/gambar-4.jpg" alt="Project 1">
+                    <p>Designing the ui/ux design of an application to facilitate the communication of a speech impaired person and provide learning of sign language is a very challenging but also memorable experience.</p>
+                </div>
         </section>
 
-        <!-- message us -->
+       <!-- Pesan -->
         <section>
             <header id="message-us">
-                <h1>message us</h1>
+                <h1>Message Us</h1>
+                <p>How was your experience when you visited my website? I was very happy to read your message.</p>
             </header>
 
-            <div class="content"></div>
-        </section>
-    </main>
+                <div class="message-form">
+                    <div class="form-field">
+                    <label for="name">Name:</label> 
+                    <input type="text" id="name" placeholder="Enter your name" required><br><br>
+                </div>
 
-    
+                <div class="form-field">
+                    <label for="email">Email Address:</label>
+                    <input type="email" id="email" placeholder="Enter your email" required><br><br>
+                </div>
+
+                <div class="form-field">
+                    <label for="phone">Phone Number:</label>
+                    <input type="tel" id="phone" placeholder="Enter your phone number" required><br><br>
+                </div>
+
+                <div class="form-field">
+                    <label for="message">Message (Max 100 words):</label>
+                    <textarea id="message" placeholder="Enter your message" maxlength="100" required></textarea><br><br>
+                </div>
+
+                <br><br>
+                <button type="button" id="submit-btn">Submit</button>
+                </div>
+                <div id="result-form"></div>
+        </section>
+
+        <!-- Overlay untuk pop-up -->
+        <div id="overlay"></div>
+
+        <!-- Pop-Up Thank You -->
+        <div id="thank-you-popup"></div>
+
+        <!-- Pop-Up Error -->
+        <div id="error-popup"></div>
+
+    </main>
     <hr />
 
     <footer>
-        <p>$copy; 2025 - All Rights Reserved</p>
+        <p>&copy; 2025 - All Rights Reserved</p>
     </footer>
+
+    <script src="js/script.js"></script
 </body>
 </html>
